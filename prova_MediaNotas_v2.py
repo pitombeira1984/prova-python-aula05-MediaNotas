@@ -6,11 +6,11 @@ def medianotas():
         aluno = []        
         for i in range(numerodealunos):
             aluno.append(input(f"Digite o nome do aluno {i+1}: "))
-            notas_aluno = []  # Reiniciar a lista de notas para cada aluno
+            notas_aluno = []
             for j in range(numerodenotas):
                 nota = float(input(f"Digite a nota {j+1} de {aluno[i]}: "))
                 notas_aluno.append(nota)
-            notas.append(notas_aluno)  # Adicionar as notas deste aluno à lista geral
+            notas.append(notas_aluno) 
 
         for i in range(numerodealunos):
             soma = sum(notas[i])
